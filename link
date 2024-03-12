@@ -1,0 +1,8 @@
+Date Table =
+ADDCOLUMNS(
+   CALENDAR(MIN('space_missions'[Date]),MAX('space_missions'[Date])),
+   "Year", YEAR( [Date] ),
+   "Month", FORMAT([Date],"MMM"),
+   "Month Number", MONTH([Date])
+   )
+ 
